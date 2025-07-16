@@ -7,8 +7,10 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-nltk.download('stopwords', force=True)
-nltk.download('punkt', force=True) 
+nltk_data_path = os.path.join(os.getcwd(), "nltk_data")
+nltk.download('punkt', download_dir=nltk_data_path, force=True)
+nltk.download('stopwords', download_dir=nltk_data_path, force=True)
+nltk.data.path.append(nltk_data_path)
 
 st.set_page_config(page_title="Insights", layout="wide")#, initial_sidebar_state="collapsed")
 
