@@ -6,6 +6,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfVectorizer
 import matplotlib.pyplot as plt
 import seaborn as sns
+import os
 
 nltk_data_path = os.path.join(os.getcwd(), "nltk_data")
 nltk.download('punkt', download_dir=nltk_data_path, force=True)
