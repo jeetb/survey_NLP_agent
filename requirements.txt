@@ -6,3 +6,4 @@ openai
 matplotlib
 seaborn
 scikit-learn
+os
