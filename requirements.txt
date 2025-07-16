@@ -1,0 +1,7 @@
+streamlit
+pandas
+nltk
+textblob
+openai
+matplotlib
+seaborn
