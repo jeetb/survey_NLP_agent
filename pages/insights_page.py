@@ -6,6 +6,8 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+nltk.download('stopwords')
+nltk.download('punkt') 
 
 st.set_page_config(page_title="Insights", layout="wide")#, initial_sidebar_state="collapsed")
 
